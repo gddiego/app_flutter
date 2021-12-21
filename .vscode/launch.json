@@ -5,12 +5,12 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "simple_app",
+      "name": "app_flutter",
       "request": "launch",
       "type": "dart"
     },
     {
-      "name": "simple_app (profile mode)",
+      "name": "app_flutter (profile mode)",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile"

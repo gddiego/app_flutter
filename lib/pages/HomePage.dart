@@ -10,16 +10,37 @@ class Homepage extends StatefulWidget {
   }
 }
 
-class HomePageState extends State<Homepage>{
+class HomePageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: const Text('App Simple'),
+        
+      ),
+      
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/add');
+        },
+        child: const Icon(Icons.add),
       ),
       body: const Center(
-        child: Text('Home'),
+        
+        child: Card(
+          child: SizedBox(
+            width: 300,
+            height: 100,
+            child: Center(
+              child: Text('Hello World'),
+            ),
+          ),
+          
+        ),
+        
       ),
     );
+    // ignore: dead_code
+    
   }
 }

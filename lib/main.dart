@@ -1,9 +1,8 @@
 // ignore_for_file: deprecated_member_use
 
+import 'package:app_simple/pages/app_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:simple_app/pages/HomePage.dart';
 
-
-void main() {
-  runApp(Homepage());
+ main() {
+  runApp(const AppWidget());
 }
